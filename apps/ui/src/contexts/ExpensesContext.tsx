@@ -102,7 +102,11 @@ export function ExpensesProvider({ children, scenario, failMutations }: Expenses
   );
 
   const resetData = useCallback(async () => {
-    expenseApi.seedMockApi(mockExpenses);
+    try {
+      await expenseApi.resetExpenses();
+    } catch {
+      expenseApi.seedMockApi(mockExpenses);
+    }
     await reload();
     showToast({ type: 'info', title: 'Demo data restored' });
   }, [reload, showToast]);

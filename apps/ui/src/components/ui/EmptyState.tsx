@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import { BoxIcon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 interface EmptyStateProps {
-  icon: BoxIcon;
+  icon: LucideIcon;
   title: string;
   description: string;
   actions?: ReactNode;

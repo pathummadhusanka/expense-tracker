@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { LayoutDashboardIcon, ReceiptIcon, SettingsIcon, WalletIcon, BoxIcon } from "lucide-react";
+import { LayoutDashboardIcon, ReceiptIcon, SettingsIcon, WalletIcon } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 interface NavItem {
   to: string;
   label: string;
-  icon: BoxIcon;
+  icon: LucideIcon;
   end?: boolean;
 }
 const primaryNav: NavItem[] = [{
