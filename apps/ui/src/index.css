@@ -1,0 +1,46 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --canvas: 247 247 245;
+  --surface: 255 255 255;
+  --subtle: 241 241 238;
+  --border: 229 229 224;
+  --border-strong: 205 205 199;
+  --ink: 24 24 22;
+  --muted: 92 92 87;
+  --faint: 118 118 112;
+  --accent: 21 94 77;
+  --accent-hover: 14 74 60;
+  --accent-soft: 229 241 236;
+  --danger: 185 28 28;
+  --danger-hover: 153 27 27;
+  --danger-soft: 254 242 242;
+  --success: 21 128 61;
+}
+html,
+body,
+#root {
+  min-height: 100%;
+}
+body {
+  background-color: rgb(var(--canvas));
+  color: rgb(var(--ink));
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
