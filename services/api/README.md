@@ -70,7 +70,7 @@ services/api/
 ### 1. Install Dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 2. Environment Configuration
@@ -90,7 +90,7 @@ cp .env.example .env
 
 ### 3. Available Scripts
 
-- `npm run dev`: Start development server with file watch and auto-restart
-- `npm run build`: Compile TypeScript to `dist/`
-- `npm start`: Start compiled server in production mode
-- `npm run typecheck`: Run TypeScript compiler check without emitting files
+- `pnpm dev`: Start development server with file watch and auto-restart
+- `pnpm build`: Compile TypeScript to `dist/`
+- `pnpm start`: Start compiled server in production mode
+- `pnpm typecheck`: Run TypeScript compiler check without emitting files
